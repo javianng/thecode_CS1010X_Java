@@ -1,6 +1,3 @@
-package Java;
-
-import java.util.Arrays;
 import java.util.Scanner;
 import java.util.ArrayList;
 
@@ -14,28 +11,28 @@ public class TowerOfHanoi {
     this.numDiscs = n;
     this.peg = new ArrayList[3];
     // Write your code here
-
-    ArrayList<Integer> positionZeroArrayList = new ArrayList<Integer>();
-    ArrayList<Integer> positionOneArrayList = new ArrayList<Integer>();
-    ArrayList<Integer> positionTwoArrayList = new ArrayList<Integer>();
+    ArrayList<Integer> sourcePeg = new ArrayList<Integer>();
+    ArrayList<Integer> intermediatePeg = new ArrayList<Integer>();
+    ArrayList<Integer> destinationPeg = new ArrayList<Integer>();
 
     for (int i = 0; i < n; i++) {
-      positionZeroArrayList.add(i);
-
-    this.peg[0] = positionZeroArrayList;
-    this.peg[1] = positionOneArrayList;
-    this.peg[2] = positionTwoArrayList;
+      sourcePeg.add(i);
+      peg[0] = sourcePeg;
+      peg[1] = intermediatePeg;
+      peg[2] = destinationPeg;
     }
   }
 
   private void moveDisc(int src, int des) {
+    // Write your code here
     peg[des].add((int) peg[src].get(peg[src].size() - 1));
     peg[src].remove((int) peg[src].get(peg[src].size() - 1));
-
+    printTower();
   }
 
   public void printTower() {
-    System.out.println(Arrays.toString(peg));
+    // Write your code here
+    System.out.println(peg);
   }
 
   public void makeMoves(int n, int src, int des, int aux) {
@@ -55,3 +52,4 @@ public class TowerOfHanoi {
     t.makeMoves( n, 0, 2, 1 );
   }
 }
+  
