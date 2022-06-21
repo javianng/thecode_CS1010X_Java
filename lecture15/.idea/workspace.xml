@@ -1,13 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="706a8de1-70a5-42e5-a7d7-6a5a853ea323" name="Changes" comment="" />
+    <list default="true" id="706a8de1-70a5-42e5-a7d7-6a5a853ea323" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../mission_16_NUS_Bus_Simulator/src/Java/AbstractBus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mission_16_NUS_Bus_Simulator/src/Java/BusA1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mission_16_NUS_Bus_Simulator/src/Java/BusB1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mission_16_NUS_Bus_Simulator/src/Java/BusC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mission_16_NUS_Bus_Simulator/src/Java/BusD1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mission_16_NUS_Bus_Simulator/src/Java/BusEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mission_16_NUS_Bus_Simulator/src/Java/BusMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mission_16_NUS_Bus_Simulator/src/Java/BusSimulator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mission_16_NUS_Bus_Simulator/src/Java/EventType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mission_16_NUS_Bus_Simulator/src/Resources/mission16.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mission_16_NUS_Bus_Simulator/src/Test/test1.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mission_16_NUS_Bus_Simulator/src/Test/test1.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mission_16_NUS_Bus_Simulator/src/Test/test1_random.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mission_16_NUS_Bus_Simulator/src/Test/test2.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mission_16_NUS_Bus_Simulator/src/Test/test2.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mission_16_NUS_Bus_Simulator/src/Test/test2_random.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tutorial_11/out/production/tutorial_11/Java/TowerOfHanoi.class" beforeDir="false" afterPath="$PROJECT_DIR$/../tutorial_11/out/production/tutorial_11/Java/TowerOfHanoi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tutorial_11/src/Java/TowerOfHanoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tutorial_11/src/Java/TowerOfHanoi.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="29MWVP2LgVNkvKsqa0mKvnLyDw2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -15,7 +41,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/javianng/IdeaProjects/lecture15"
   }
 }]]></component>
   <component name="RecentsManager">

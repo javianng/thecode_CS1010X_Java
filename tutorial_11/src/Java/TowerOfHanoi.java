@@ -1,3 +1,5 @@
+package Java;
+
 import java.util.Scanner;
 import java.util.ArrayList;
 
@@ -6,33 +8,36 @@ public class TowerOfHanoi {
   ArrayList[] peg;
   int numDiscs;
 
-  public TowerOfHanoi(String name, int n) {
-    this.name = name;
-    this.numDiscs = n;
-    this.peg = new ArrayList[3];
-    // Write your code here
-    ArrayList<Integer> sourcePeg = new ArrayList<Integer>();
-    ArrayList<Integer> intermediatePeg = new ArrayList<Integer>();
-    ArrayList<Integer> destinationPeg = new ArrayList<Integer>();
-
-    for (int i = 0; i < n; i++) {
-      sourcePeg.add(i);
-      peg[0] = sourcePeg;
-      peg[1] = intermediatePeg;
-      peg[2] = destinationPeg;
+  public TowerOfHanoi(String name, int n){
+    this.name= name;
+    this.numDiscs= n;
+    this.peg= new ArrayList[3];
+    for (int i=0; i<3; i++){
+      this.peg[i]= new ArrayList();
+    }
+    for (int i=0; i<n; i++){
+      this.peg[0].add(i);
     }
   }
 
-  private void moveDisc(int src, int des) {
-    // Write your code here
-    peg[des].add((int) peg[src].get(peg[src].size() - 1));
-    peg[src].remove((int) peg[src].get(peg[src].size() - 1));
+  private void moveDisc(int src, int des){
+    int idx= this.peg[src].size()-1;
+    Integer disc= (Integer) this.peg[src].remove(idx); //In python, this translates to peg[src].pop(idx)
+    this.peg[des].add(disc);
     printTower();
   }
 
-  public void printTower() {
-    // Write your code here
-    System.out.println(peg);
+  public void printTower(){
+    for (int i=0; i<3; i++){
+      System.out.print("[");
+      for (int j=0; j<this.peg[i].size(); j++){
+        System.out.print(this.peg[i].get(j)+" ");
+      }
+      System.out.print("]");
+      if (i!=2) System.out.print(", ");
+
+    }
+    System.out.println(); //prints a spacing
   }
 
   public void makeMoves(int n, int src, int des, int aux) {
@@ -52,4 +57,3 @@ public class TowerOfHanoi {
     t.makeMoves( n, 0, 2, 1 );
   }
 }
-  

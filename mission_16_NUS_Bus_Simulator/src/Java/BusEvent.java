@@ -21,8 +21,12 @@ public class BusEvent implements Comparable<BusEvent> {
     // timing, i.e. smaller `time` value should go first.
     @Override
     public int compareTo(BusEvent o) {
-        // TODO: Implement this (Task 1a)
-        return 0;
+        if (time == o.time)
+            return 0;
+        else if (time < o.time)
+            return -1;
+        else
+            return 1;
     }
 
     @Override
